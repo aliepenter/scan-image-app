@@ -1,0 +1,27 @@
+{
+  "host": "https://kalles-demo.myshopify.com",
+  "uris": {
+    "collections": "/collections/all",
+    "blog": "/blogs/life-style"
+  },
+  "selectors": {
+    "demos": ".nt_menu .menu-item:first-child .sub-menu .lazy_menu>.menu-item:nth-child(1) .sub-column a,.nt_menu .menu-item:first-child .sub-menu .lazy_menu>.menu-item:nth-child(2) .sub-column a",
+    "collections": "#cat_shopify ul li a",
+    "productUrls": ".shopify-section.id_collection_page h3.product-title>a",
+    "pagination": {
+      "current": ".pagination-page li .current",
+      "currentHasParent": true
+    },
+    "product": {
+      "title": "h1.product_title.entry-title",
+      "images": ".sp-pr-gallery__img img"
+    },
+    "article": {
+      "wrapper": ".container article",
+      "title": ".more-link,.cd.chp.open",
+      "thumbnail": ".nt_bg_lz source",
+      "content": ".post-content source"
+    }
+  },
+  "dest": "./downloaded"
+}
